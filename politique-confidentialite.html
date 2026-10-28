@@ -30,7 +30,7 @@
 <body>
     <p><a href="index.html">← Gecco</a></p>
     <h1>Politique de confidentialité</h1>
-    <p class="updated">Dernière mise à jour : 10 octobre 2026</p>
+    <p class="updated">Dernière mise à jour : 28 octobre 2026</p>
 
     <p>Gecco est une application iOS de podcasts de culture générale, éditée par
     <strong>Matteo Sonniez</strong> (ci-après «&nbsp;nous&nbsp;»), responsable du traitement
@@ -49,26 +49,47 @@
             Apple&nbsp;» ou Google, nous recevons l'email (ou son relais masqué Apple) transmis
             par ces services&nbsp;; la connexion Google nous transmet en outre ton nom et ta
             photo de profil, que nous conservons dans ta fiche de compte sans les afficher.
-            Ton mot de passe éventuel est stocké sous forme hachée (illisible), jamais en clair.</td>
+            Ton mot de passe éventuel est stocké sous forme hachée (illisible), jamais en clair.
+            Sans compte, Gecco ouvre une <strong>session invitée</strong>&nbsp;: un identifiant
+            technique anonyme, sans email, qui garde ta progression sur cet appareil. Créer un
+            compte la rattache ensuite à ton email ou à ton identifiant Apple ou Google.</td>
             <td>Créer et sécuriser ton compte, retrouver tes contenus sur tes appareils.</td>
         </tr>
         <tr>
             <td><strong>Activité d'écoute</strong></td>
             <td>Épisodes lus, mises en pause, progression et épisodes terminés&nbsp;;
             réactions «&nbsp;j'aime / je n'aime pas&nbsp;»&nbsp;; thèmes choisis à
-            l'inscription&nbsp;; contenu de ta playlist.</td>
+            l'inscription&nbsp;; contenu de ta playlist&nbsp;; rythme d'écoute choisi et
+            série de curiosité calculée à partir de tes écoutes. Une écoute faite sans
+            réseau attend sur ton appareil, puis part avec son heure au retour de la
+            connexion. Regroupées avec celles des autres utilisateurs, tes écoutes servent
+            aussi à mesurer la qualité de chaque épisode (part écoutée jusqu'au bout), qui
+            ordonne les recommandations.</td>
             <td>Reprendre ta lecture, ne jamais te reproposer un épisode déjà vu, et
             personnaliser ton fil (c'est le cœur du service).</td>
         </tr>
         <tr>
             <td><strong>Commentaires et profil public</strong></td>
             <td>Ton pseudo, les commentaires et réponses que tu publies (texte, date,
-            épisode, instant de l'épisode auquel tu les accroches), les j'aime que tu
-            donnes, et la tenue de ta mascotte. <strong>Sont visibles par tous les
+            épisode), les j'aime que tu donnes, et la tenue de ta mascotte. <strong>Sont visibles par tous les
             utilisateurs</strong>&nbsp;: ton pseudo, ta mascotte, tes commentaires, et ton
             profil public (date d'arrivée, nombre de commentaires, série d'écoute, temps
             d'écoute par thème et objets gagnés). Ton email n'est jamais montré.</td>
             <td>Faire fonctionner l'espace commentaires et les profils.</td>
+        </tr>
+        <tr>
+            <td><strong>Aventure</strong></td>
+            <td>Ta progression (leçons terminées, combats gagnés et leurs étoiles, boîtes
+            ouvertes), tes Gecco Points, les objets gagnés et la tenue de ta mascotte.</td>
+            <td>Garder ta progression et tes récompenses, sur tous tes appareils.</td>
+        </tr>
+        <tr>
+            <td><strong>Notifications et rappels</strong></td>
+            <td>Si tu les autorises&nbsp;: le jeton de notifications de ton appareil (fourni
+            par Apple) et tes réglages (nouvelles histoires du vendredi, réponses à tes
+            commentaires). Le rappel du jour est programmé sur ton appareil par l'app
+            elle-même&nbsp;: il ne transmet rien de plus.</td>
+            <td>T'envoyer les notifications que tu as choisies, et seulement celles-là.</td>
         </tr>
         <tr>
             <td><strong>Modération</strong></td>
@@ -93,13 +114,20 @@
         <tr>
             <td><strong>Données d'usage</strong></td>
             <td>Compteurs relatifs aux écrans et fonctionnalités utilisés, étapes
-            d'onboarding, recherches réussies ou échouées, écoutes, playlists,
-            réactions et téléchargements, avec la version de l'app et la version
+            d'onboarding, recherches réussies ou échouées, écoutes (et l'écran d'où
+            elles sont lancées), séries et pages d'épisode ouvertes, playlists,
+            réactions et téléchargements, leçons, combats et coffres de l'Aventure,
+            notifications ouvertes et réglages changés, commentaires ouverts et
+            publiés (jamais leur texte), avec la version de l'app et la version
             majeure d'iOS. Le texte recherché n'est jamais transmis. Ce flux ne
             contient aucun identifiant de compte, d'appareil, d'installation ou de
             session, ni email, nom, date fournie par l'app ou message libre. Les
             évènements sont immédiatement regroupés par tranches de cinq minutes.
-            Il n'y a ni autocapture, ni enregistrement d'écran, ni replay de session.</td>
+            Sans réseau, quelques compteurs attendent en mémoire, jamais sur
+            l'appareil. Des totaux (fréquentation, rétention, activité de
+            l'Aventure et de la communauté) sont aussi calculés dans Supabase à
+            partir des données du service&nbsp;: seuls ces totaux en sortent. Il
+            n'y a ni autocapture, ni enregistrement d'écran, ni replay de session.</td>
             <td>Produire exclusivement des statistiques de fréquentation, de contenu
             et de fiabilité pour améliorer Gecco.</td>
         </tr>
@@ -125,6 +153,11 @@
     <p>Gecco ne demande aucun accès à ta photothèque, à tes contacts ou à ta position.
     En dehors de la photo de profil éventuellement transmise par Google, nous ne collectons
     aucune photo. Nous ne collectons aucune donnée de santé ni aucun identifiant publicitaire.</p>
+    <p><strong>Intelligence artificielle.</strong> Les voix des épisodes et des leçons sont
+    des voix de synthèse, et les illustrations sont créées avec des outils d'intelligence
+    artificielle. Les textes sont préparés avec l'aide de ces outils, puis relus et
+    vérifiés par l'équipe éditoriale. Aucune donnée personnelle des utilisateurs n'est
+    transmise à ces outils.</p>
 
     <h2>2. Bases légales</h2>
     <p>Ces traitements reposent sur l'<strong>exécution du contrat</strong> qui nous lie
@@ -160,6 +193,9 @@
     <ul>
         <li><strong>Supabase</strong> (hébergement de la base de données et authentification)&nbsp;;</li>
         <li><strong>PostHog</strong> (statistiques produit agrégées uniquement, cloud européen)&nbsp;;</li>
+        <li><strong>Resend</strong> (envoi des emails de code de confirmation et de nouveau mot
+        de passe, depuis l'Union européenne)&nbsp;: il reçoit seulement ton adresse email et le
+        code à t'envoyer&nbsp;;</li>
         <li><strong>Apple</strong> (paiement des abonnements, connexion «&nbsp;Se connecter avec Apple&nbsp;»)&nbsp;;</li>
         <li><strong>Google</strong> (connexion Google, si tu la choisis)&nbsp;: son SDK peut
         traiter, selon les informations associées au compte, des données de contact telles
@@ -172,7 +208,9 @@
 
     <h2>5. Durées de conservation</h2>
     <p>Les données de ton compte et de personnalisation sont conservées
-    <strong>tant que ton compte existe</strong>. Les compteurs analytics déjà agrégés sont
+    <strong>tant que ton compte existe</strong>. Si tu utilises Gecco sans créer de compte
+    (session invitée), elles sont effacées automatiquement après <strong>180 jours</strong>
+    sans aucune utilisation de l'app, sauf abonnement en cours. Les compteurs analytics déjà agrégés sont
     conservés jusqu'à 30 jours dans Supabase après leur livraison, et les statistiques
     agrégées sont conservées au maximum 12 mois dans PostHog. Elles ne permettent pas de
     retrouver l'activité d'un compte particulier. Tes commentaires restent publiés tant que
